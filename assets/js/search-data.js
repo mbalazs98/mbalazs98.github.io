@@ -440,10 +440,7 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/the_godfather/";
-            },},{id: "news-a-simple-inline-announcement-with-markdown-emoji-sparkles-smile",
-          title: 'A simple inline announcement with Markdown emoji! :sparkles: :smile:',
-          description: "",
-          section: "News",},{id: "news-happy-to-share-that-our-paper-efficient-event-based-delay-learning-in-spiking-neural-networks-has-been-accepted-in-nature-communications",
+            },},{id: "news-happy-to-share-that-our-paper-efficient-event-based-delay-learning-in-spiking-neural-networks-has-been-accepted-in-nature-communications",
           title: 'Happy to share that our paper “Efficient Event-based Delay Learning in Spiking Neural...',
           description: "",
           section: "News",},{id: "projects-project-1",
