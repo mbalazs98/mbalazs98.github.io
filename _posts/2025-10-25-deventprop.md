@@ -22,7 +22,7 @@ authors:
   - name: Jonathan Timcheck
   - name: Thomas Nowotny
 
-bibliography: 2018-12-22-distill.bib
+bibliography: 2025-10-25-deventprop.bib
 
 # Optionally, you can add a table of contents to your post.
 # NOTES:
