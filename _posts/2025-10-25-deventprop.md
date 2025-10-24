@@ -81,7 +81,7 @@ A major drawback to their method lies in the ammeanability for neuromorphic hard
 
 <d-cite key="wunderlich2021event"></d-cite> proposed to stay in continous time before calculating gradients, and <d-cite key="nowotny2025loss"></d-cite> showed how this could be scaled up for temporall more complex tasks. Recently, it has been even implemented on the SpINNaker hardware <d-cite key="bena2024event"></d-cite>. This is thanks to the backward propagation having essentially identical computational/memory requirements as the backward pass. It seems like the perfect framework to introduce delays in!
 
-##Results
+## Results
 
 After extensive calculations <d-cite key="meszaros2025efficient"></d-cite>, we end up with a similarly efficient delay learning update. Relying on the same ordinary differential equations, we can apply both synaptic weight and delay gradients, by sampling the correct terms only at spike times. We end up with a delay learning algorithm that for the first time allows for recurrent connections! 
 
