@@ -55,7 +55,7 @@ _styles: >
 ---
 
 ## Myelination
-The brain enables the organism to learn and change behavior to an ever-changing environement. Most studies try to undestand the underpinnings of the plasticy through synaptic weight changes. Myelin however is also plastic and there has been experimental evidence that shows that similary to synaptic strength, it is modulated by neuron activity<d-cite key="bonetto2021myelin"></d-cite>. A great example of the benefit having a diverse set of delays in a network is sequence detection can be done in quite simple circuits<d-cite key="izhikevich2006polychronization"></d-cite>.
+The brain enables the organism to learn and change behavior to an ever-changing environement. Most studies try to understand the underpinnings of plasticy through synaptic weight changes. Myelin however is also plastic and there has been experimental evidence that shows that similary to synaptic strength, it is modulated by neuron activity<d-cite key="bonetto2021myelin"></d-cite>. A great example of the benefit having a diverse set of delays in a network is that sequence detection can be done in quite simple circuits<d-cite key="izhikevich2006polychronization"></d-cite>.
 
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
