@@ -72,7 +72,15 @@ _styles: >
 ---
 
 ## Myelination
-The brain enables the organism to learn and change behavior to an ever-changing environement. Most studies try to undestand the underpinnings of the plasticy through synaptic weight changes. Myelin however is also plastic and there has been experimental evidence that shows that similary to synaptic strength, it is modulated by neuron activity <d-cite key="bonetto2021myelin"></d-cite>. How could we study the benefits of myelin plascitcity in artificial neural networks? One option is introducing optimiseable delays in Spiking Neural Networks. 
+The brain enables the organism to learn and change behavior to an ever-changing environement. Most studies try to undestand the underpinnings of the plasticy through synaptic weight changes. Myelin however is also plastic and there has been experimental evidence that shows that similary to synaptic strength, it is modulated by neuron activity <d-cite key="bonetto2021myelin"></d-cite>. A great example of the benefit having a diverse set of delays in a network is sequence detection can be done in quite simple circuits <d-cite key="izhikevich2006polychronization"></d-cite>.
+
+<div class="row mt-3">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/polychronization.jpg" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+
+How could we study the benefits of myelin plascitcity in artificial neural networks? One option is introducing optimiseable delays in Spiking Neural Networks. 
 
 ## Delay learning
 We are the not the first to be interested in employing such mechanisms into machine learning setups. There has been a recent upsurge in interest after <d-cite key="hammouamri2023learning"></d-cite> achieved SOTA results on spiking benchmarks after introducing one solution to the said problem through temporal 1D dilated convolutions with learnable spacings (DCLS). 
