@@ -66,7 +66,7 @@ The brain enables the organism to learn and change behavior to an ever-changing 
 How could we study the benefits of myelin plascitcity in artificial neural networks? One option is introducing optimiseable delays in Spiking Neural Networks. 
 
 ## Delay learning
-We are the not the first to be interested in employing such mechanisms into machine learning setups. There has been a recent upsurge in interest after <d-cite key="hammouamri2023learning"></d-cite> achieved SOTA results on spiking benchmarks after introducing one solution to the said problem through temporal 1D dilated convolutions with learnable spacings (DCLS). 
+We are the not the first to be interested in employing such mechanisms into machine learning setups. There has been a recent upsurge in interest after <d-cite key="hammouamrilearning"></d-cite> achieved SOTA results on spiking benchmarks after introducing one solution to the said problem through temporal 1D dilated convolutions with learnable spacings (DCLS). 
 
 A major drawback to their method lies in the ammeanability for neuromorphic hardware. While for inference discretising the whole network is not necessarily an issue, for training every timestep needs to be stored in the memory, which limits both networks size and temporal precisions and/or sequence length. This is an issue that is general to backpropagation through time (BPTT). 
 
