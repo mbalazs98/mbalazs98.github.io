@@ -70,7 +70,7 @@ We are the not the first to be interested in employing such mechanisms into mach
 
 A major drawback to their method lies in the ammeanability for neuromorphic hardware. While for inference discretising the whole network is not necessarily an issue, for training every timestep needs to be stored in the memory, which limits both networks size and temporal precisions and/or sequence length. This is an issue that is general to backpropagation through time (BPTT). 
 
-Wunderlich et. al.<d-cite key="wunderlich2021event"></d-cite> proposed to stay in continous time before calculating gradients, and <d-cite key="nowotny2025loss"></d-cite> showed how this could be scaled up for temporall more complex tasks. Recently, it has been even implemented on the SpINNaker hardware <d-cite key="bena2024event"></d-cite>. This is thanks to the backward propagation having essentially identical computational/memory requirements as the backward pass. It seems like the perfect framework to introduce delays in!
+Wunderlich et. al.<d-cite key="wunderlich2021event"></d-cite> proposed to stay in continous time before calculating gradients, and Nowotny et. al.<d-cite key="nowotny2025loss"></d-cite> showed how this could be scaled up for temporall more complex tasks. Recently, it has been even implemented on the SpINNaker hardware <d-cite key="bena2024event"></d-cite>. This is thanks to the backward propagation having essentially identical computational/memory requirements as the backward pass. It seems like the perfect framework to introduce delays in!
 
 ## Results
 
