@@ -83,7 +83,7 @@ After extensive calculations <d-cite key="meszaros2025efficient"></d-cite>, we e
 </div>
 
 
-We test our implementations on the Yin-yang, Spiking Heidelberg Digits, Spiking Speech Commands, and Braille letter reading datasets. We find the delays are always a useful addition, and interestingly, they become particularly useful in small recurrent networks. With the correct implementations this method becomes significantly more efficient than discretisaiton (i.e BPTT) based methods. With fixed network sizes and maximum delay timesteps, we outperform the DCLS based method both in terms of memory requirements in speed.
+We test our implementations on the Yin-yang, Spiking Heidelberg Digits, Spiking Speech Commands, and Braille letter reading datasets. We find the delays are always a useful addition, and interestingly, they become particularly useful in small recurrent networks.
 
 
 <div class="row mt-3">
@@ -91,6 +91,16 @@ We test our implementations on the Yin-yang, Spiking Heidelberg Digits, Spiking 
         {% include figure.liquid loading="eager" path="assets/img/deventprop_results.jpg" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
+
+With the correct implementations this method becomes significantly more efficient than discretisaiton (i.e BPTT) based methods. With fixed network sizes and maximum delay timesteps, we outperform the DCLS based method both in terms of memory requirements in speed.
+
+<div class="row mt-3">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/dilated_conv_genn_benchmark.pdf" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+
+
 
 We also tested our method on Loihi 2 for inference<d-cite key="meszaros2025complete"></d-cite>. For this, we had to quantise our methods and limit our maximum delay timesteps. While this lead to a slight performance decrease, in terms of energy usage, Loihi 2 significantly outperforms GPU based implementaitons even with delays.
 
