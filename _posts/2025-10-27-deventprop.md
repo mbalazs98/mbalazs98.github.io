@@ -1,7 +1,7 @@
 ---
 layout: distill
 title: Efficient event-based delay learning
-giscus_comments: true
+giscus_comments: false
 date: 2025-10-24
 featured: true
 mermaid:
