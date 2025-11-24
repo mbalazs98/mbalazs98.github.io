@@ -144,6 +144,59 @@
     }
 
   ],
+
+  "awards": [
+    {
+      "title": "PhD enrichment scheme",
+      "date": "2024",
+      "awarder": "The Alan Turing Institute",
+      "url": "https://www.turing.ac.uk"
+    },
+    {
+      "title": "be.AI doctoral scholarship",
+      "date": "2023",
+      "awarder": "The Leverhulme Trust",
+      "url": "https://www.leverhulme.ac.uk"
+    },
+    {
+      "title": "Young Scientist Award",
+      "date": "2022",
+      "awarder": "Nokia",
+      "url": "https://www.inf.elte.hu/content/nokia-elismeresek-hallgatoinknak-nokia-young-scientist-award-dijatado.t.4615"
+    },
+    {
+      "title": "Scientific Student Body Conference 1st prize",
+      "date": "2022",
+      "awarder": "Eötvös Loránd University",
+      "url": "https://tdk.inf.elte.hu"
+    }
+  ],
+  "certificates": [
+    {
+      "name": "NeuroAI Summer School",
+      "date": "2025",
+      "issuer": "Neuromatch Academy",
+      "url": "https://portal.neuromatchacademy.org/certificate/ddce948d-f3e8-4d11-a6f1-8abe82d97552",
+    },
+    {
+      "name": "Associate Fellow",
+      "date": "2024",
+      "issuer": "Advanced HE",
+      "url": "",
+    },
+    {
+      "name": "Computational Neuroscience Summer School",
+      "date": "2023",
+      "issuer": "Neuromatch Academy",
+      "url": "https://portal.neuromatchacademy.org/certificate/d0cdeca4-d05f-4be4-bb0d-f18dcdb7efb8",
+    },
+    {
+      "name": "English Profiency Test",
+      "date": "2023",
+      "issuer": "Duolingo",
+      "url": "certs.duolingo.com/437fd1a9e805548f9a7992c706a29718",
+    }
+  ],
   "volunteer": [
     {
       "organization": "People's Climate March",
@@ -157,59 +210,7 @@
     }
   ],
   
-  "awards": [
-    {
-      "title": "Nobel Prize in Physics",
-      "date": "1921-11-01",
-      "awarder": "Royal Swedish Academy of Sciences",
-      "url": "https://www.nobelprize.org/prizes/physics/1921/einstein/biographical/",
-      "summary": "The Nobel Prizes are five separate prizes that, according to Alfred Nobel's will of 1895, are awarded to 'those who, during the preceding year, have conferred the greatest benefit to humankind.'"
-    }
-  ],
-  "certificates": [
-    {
-      "name": "Machine Learning",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-location-dot"
-    },
-    {
-      "name": "Quantum Computing",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-tag"
-    },
-    {
-      "name": "Quantum Information",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-envelope"
-    },
-    {
-      "name": "Quantum Cryptography",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-hashtag"
-    },
-    {
-      "name": "Quantum Communication",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-calendar"
-    },
-    {
-      "name": "Quantum Teleportation",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-clipboard-check"
-    }
-  ],
+  
   "publications": [
     {
       "name": "Zur Elektrody/namik bewegter Körper",
@@ -235,22 +236,28 @@
   ],
   "skills": [
     {
-      "name": "Physics",
-      "level": "Master",
-      "icon": "fa-solid fa-hashtag",
+      "name": "Programming languages",
       "keywords": [
-        "Quantum Mechanics",
-        "Quantum Computing",
-        "Quantum Information",
-        "Quantum Cryptography",
-        "Quantum Communication",
-        "Quantum Teleportation"
+        "C/C++",
+        "Python",
+        "Prolog"
       ]
-    }
+    },
+    {
+      "name": "Software/Libraries",
+      "keywords": [
+        "Numpy",
+        "Keras",
+        "Pytorch",
+        "OpenCV",
+        "Latex",
+        "mlGeNN"
+      ]
+    },
   ],
   "languages": [
     {
-      "language": "German",
+      "language": "Hungarian",
       "fluency": "Native speaker",
       "icon": ""
     },
@@ -258,7 +265,12 @@
       "language": "English",
       "fluency": "Fluent",
       "icon": ""
-    }
+    },
+    {
+      "language": "German",
+      "fluency": "Intermediate",
+      "icon": ""
+    },
   ],
   "interests": [
     {
@@ -272,28 +284,6 @@
         "Quantum Communication",
         "Quantum Teleportation"
       ]
-    }
-  ],
-  "references": [
-    {
-      "name": "Professor John Doe",
-      "icon": "fa-solid fa-laptop",
-      "reference": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum, diam quis convallis euismod, arcu mi ullamcorper lorem, a vestibulum nunc magna at sem. Sed in risus ac felis varius blandit. D"
-    },
-    {
-      "name": "Professor John Doe",
-      "icon": "fa-solid fa-thumbtack",
-      "reference": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum, diam quis convallis euismod, arcu mi ullamcorper lorem, a vestibulum nunc magna at sem. Sed in risus ac felis varius blandit. D"
-    }
-  ],
-  "projects": [
-    {
-      "name": "Quantum Computing",
-      "summary": "Quantum computing is the use of quantum-mechanical phenomena such as superposition and entanglement to perform computation. Computers that perform quantum computations are known as quantum computers.",
-      "highlights": ["Quantum Teleportation", "Quantum Cryptography"],
-      "startDate": "2018-01-01",
-      "endDate": "2018-01-01",
-      "url": "https://example.com"
     }
   ]
 }
