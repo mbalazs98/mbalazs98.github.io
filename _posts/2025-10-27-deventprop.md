@@ -2,7 +2,7 @@
 layout: distill
 title: Efficient event-based delay learning
 giscus_comments: false
-date: 2025-10-24
+date: 2025-11-25
 featured: true
 mermaid:
   enabled: true
@@ -63,7 +63,7 @@ The brain enables the organism to learn and change behavior to an ever-changing 
     </div>
 </div>
 
-How could we study the benefits of myelin plascitcity in artificial neural networks? One option is introducing optimiseable delays in Spiking Neural Networks. 
+How could we study the benefits of myelin plascitcity in artificial neural networks? One option is introducing optimisable delays in Spiking Neural Networks. 
 
 ## Delay learning
 We are the not the first to be interested in employing such mechanisms into machine learning setups. There has been a recent upsurge in interest since Hammouamri et. al.<d-cite key="hammouamrilearning"></d-cite> achieved SOTA results on spiking benchmarks after introducing temporal 1D dilated convolutions with learnable spacings (DCLS) as a delay learning algorithm. 
