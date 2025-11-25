@@ -102,7 +102,7 @@ With the correct implementations this method becomes significantly more efficien
 
 
 
-We also tested our method on Loihi 2 for inference<d-cite key="meszaros2025complete"></d-cite>. For this, we had to quantise our methods and limit our maximum delay timesteps. While this lead to a slight performance decrease, in terms of energy usage, Loihi 2 significantly outperforms GPU based implementaitons even with delays.
+We also tested our method on Loihi 2 for inference<d-cite key="meszaros2025complete"></d-cite>. For this, we had to quantise our parameters and limit our maximum delay timesteps. While this lead to a slight performance decrease, in terms of energy usage, Loihi 2 significantly outperforms GPU based implementaitons even with delays.
 
 
 
