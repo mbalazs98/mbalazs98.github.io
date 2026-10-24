@@ -1,0 +1,38 @@
+---
+layout: none
+permalink: /wedding/
+sitemap: false
+---
+<!doctype html>
+<html lang="en">
+<head>
+  {% include wedding_head.liquid %}
+</head>
+<body>
+  <main class="page">
+    {% include wedding_header.liquid active="home" %}
+
+    <img class="hero" src="{{ '/wedding/img/hero.png' | relative_url }}" alt="">
+
+    <p data-i18n="home.intro">We're getting married! We would love to celebrate with you.</p>
+
+    <div class="details">
+      <div>
+        <h3 data-i18n="home.when">When</h3>
+        <p data-i18n="home.whenText"></p>
+      </div>
+      <div>
+        <h3 data-i18n="home.where">Where</h3>
+        <p><a href="https://maps.google.com/?q=Gólya+Presszó,+Orczy+út+46-48,+1089+Budapest" target="_blank" rel="noopener" data-i18n="home.whereText"></a></p>
+      </div>
+      <div>
+        <h3 data-i18n="home.schedule">Schedule</h3>
+        <p data-i18n="home.scheduleText"></p>
+      </div>
+    </div>
+
+    <p style="margin-top:2.5rem" data-i18n="home.rsvp"></p>
+    <a class="cta" href="{{ '/wedding/register/' | relative_url }}" data-i18n="home.cta">Register</a>
+  </main>
+</body>
+</html>

@@ -1,0 +1,20 @@
+---
+layout: none
+permalink: /wedding/attendees/
+sitemap: false
+---
+<!doctype html>
+<html lang="en">
+<head>
+  {% include wedding_head.liquid %}
+</head>
+<body>
+  <main class="page">
+    {% include wedding_header.liquid active="attendees" %}
+
+    <h2 data-i18n="att.title">Guests</h2>
+    <p class="count" id="count" role="status"></p>
+    <ul class="attendees" id="attendees"></ul>
+  </main>
+</body>
+</html>

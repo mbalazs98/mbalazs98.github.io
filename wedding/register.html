@@ -1,0 +1,60 @@
+---
+layout: none
+permalink: /wedding/register/
+sitemap: false
+---
+<!doctype html>
+<html lang="en">
+<head>
+  {% include wedding_head.liquid %}
+</head>
+<body>
+  <main class="page">
+    {% include wedding_header.liquid active="register" %}
+
+    <h2 data-i18n="reg.title">Registration</h2>
+    <p data-i18n="reg.intro"></p>
+
+    <form id="register-form" novalidate>
+      <div id="people"></div>
+      <p class="note" data-i18n="reg.accomNote"></p>
+      <p class="note" data-i18n="reg.emailNote"></p>
+      <button type="button" class="link" id="add-person" data-i18n="reg.add">+ Add another person</button>
+      <input class="hp" type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true">
+      <div>
+        <button type="submit" class="primary" data-i18n="reg.submit">Send registration</button>
+      </div>
+      <p class="status" id="status" role="status"></p>
+    </form>
+
+    <div id="done" hidden>
+      <p class="status ok" data-i18n="reg.ok"></p>
+      <button type="button" class="link" id="again" data-i18n="reg.again"></button>
+    </div>
+
+    <template id="person-template">
+      <div class="person">
+        <div>
+          <label><span data-i18n="reg.family">Family name</span>
+            <input type="text" name="family" autocomplete="family-name" maxlength="80" required>
+          </label>
+        </div>
+        <div class="first">
+          <label><span data-i18n="reg.first">First name</span>
+            <input type="text" name="first" autocomplete="given-name" maxlength="80" required>
+          </label>
+        </div>
+        <div class="email">
+          <label><span data-i18n="reg.email">Email (optional)</span>
+            <input type="email" name="email" autocomplete="email" maxlength="120">
+          </label>
+        </div>
+        <button type="button" class="link remove" data-i18n-aria="reg.remove" title="">&times;</button>
+        <div class="accom">
+          <label><input type="checkbox" name="accommodation"> <span data-i18n="reg.accom">I will need help with accommodation</span></label>
+        </div>
+      </div>
+    </template>
+  </main>
+</body>
+</html>

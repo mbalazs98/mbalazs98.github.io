@@ -1,0 +1,16 @@
+<header>
+  <div class="topbar">
+    <nav>
+      <a href="{{ '/wedding/' | relative_url }}" data-i18n="nav.home"{% if include.active == 'home' %} aria-current="page"{% endif %}>Home</a>
+      <a href="{{ '/wedding/register/' | relative_url }}" data-i18n="nav.register"{% if include.active == 'register' %} aria-current="page"{% endif %}>Registration</a>
+      <a href="{{ '/wedding/attendees/' | relative_url }}" data-i18n="nav.attendees"{% if include.active == 'attendees' %} aria-current="page"{% endif %}>Guests</a>
+    </nav>
+    <div class="lang-switch" role="group" aria-label="Language / Nyelv">
+      <button type="button" data-lang="hu">HU</button>
+      <button type="button" data-lang="en">EN</button>
+    </div>
+  </div>
+  <p class="date" data-i18n="date">5 June 2026</p>
+  <h1>Laurette &amp; Balázs</h1>
+</header>
+<p class="banner" id="demo-banner" data-i18n="demo" hidden></p>
