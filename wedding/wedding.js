@@ -10,13 +10,10 @@ const STRINGS = {
     "nav.register": "Registration",
     "nav.attendees": "Guests",
     date: "5 June 2027",
-    "home.intro": "We're getting married! We would love to celebrate with you.",
     "home.when": "When",
     "home.whenText": "Saturday, 5 June 2027",
     "home.where": "Where",
     "home.whereText": "Gólya Presszó, Orczy út 46–48, 1089 Budapest, Hungary",
-    "home.schedule": "Schedule",
-    "home.scheduleText": "Details coming soon",
     "home.rsvp": "Please let us know if you can come.",
     "home.cta": "Register",
     "reg.title": "Registration",
@@ -24,7 +21,7 @@ const STRINGS = {
     "reg.family": "Family name",
     "reg.first": "First name",
     "reg.email": "Email (optional)",
-    "reg.emailNote": "We'll only use emails to send you updates about the wedding. They are never shown on this site.",
+    "reg.emailNote": "We'll send updates about the wedding to this address.",
     "reg.badEmail": "Please check the email addresses.",
     "reg.accom": "I will need help with accommodation",
     "reg.accomNote": "We'll do our best to help, but we can't promise we will be able to arrange accommodation for everyone.",
@@ -48,13 +45,10 @@ const STRINGS = {
     "nav.register": "Regisztráció",
     "nav.attendees": "Vendégek",
     date: "2027. június 5.",
-    "home.intro": "Összeházasodunk! Nagyon szeretnénk veletek ünnepelni.",
     "home.when": "Mikor",
     "home.whenText": "2027. június 5., szombat",
     "home.where": "Hol",
     "home.whereText": "Gólya Presszó, 1089 Budapest, Orczy út 46–48.",
-    "home.schedule": "Program",
-    "home.scheduleText": "Részletek hamarosan",
     "home.rsvp": "Kérjük, jelezzétek, ha el tudtok jönni.",
     "home.cta": "Regisztráció",
     "reg.title": "Regisztráció",
@@ -62,7 +56,7 @@ const STRINGS = {
     "reg.family": "Vezetéknév",
     "reg.first": "Keresztnév",
     "reg.email": "E-mail (nem kötelező)",
-    "reg.emailNote": "Az e-mail-címeket csak arra használjuk, hogy értesítsünk az esküvővel kapcsolatos hírekről. Az oldalon soha nem jelennek meg.",
+    "reg.emailNote": "Erre a címre küldjük majd az esküvővel kapcsolatos híreket.",
     "reg.badEmail": "Kérjük, ellenőrizd az e-mail-címeket.",
     "reg.accom": "Szükségem lesz segítségre a szállással",
     "reg.accomNote": "Igyekszünk segíteni, de nem tudjuk biztosan megígérni, hogy mindenkinek tudunk szállást szervezni.",
@@ -288,6 +282,26 @@ function initAttendees() {
     .finally(render);
 }
 
+// ---- Balázs / Mészi switch ----
+
+function initNameSwitch() {
+  const toggle = document.getElementById("name-toggle");
+  const groom = document.querySelector(".groom");
+  function show() {
+    groom.textContent = toggle.checked ? "Mészi" : "Balázs";
+  }
+  try {
+    toggle.checked = localStorage.getItem("wedding-groom") === "Mészi";
+  } catch (e) {}
+  toggle.addEventListener("change", () => {
+    show();
+    try {
+      localStorage.setItem("wedding-groom", groom.textContent);
+    } catch (e) {}
+  });
+  show();
+}
+
 // ---- Boot ----
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -296,6 +310,7 @@ document.addEventListener("DOMContentLoaded", () => {
   });
   const banner = document.getElementById("demo-banner");
   if (banner) banner.hidden = !!ENDPOINT;
+  initNameSwitch();
   initRegistration();
   initAttendees();
   applyLanguage();

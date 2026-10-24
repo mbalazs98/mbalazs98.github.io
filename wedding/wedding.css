@@ -129,6 +129,58 @@ h1 {
   line-height: 1.1;
 }
 
+.name-switch {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 0.4rem;
+  font-size: 0.95rem;
+  color: var(--ink-soft);
+  cursor: pointer;
+  user-select: none;
+}
+
+.name-switch input {
+  position: absolute;
+  opacity: 0;
+}
+
+.name-switch .track {
+  position: relative;
+  width: 2.4rem;
+  height: 1.3rem;
+  border-radius: 999px;
+  background: var(--paper-deep);
+  border: 1px solid var(--rose);
+  transition: background 0.2s;
+}
+
+.name-switch .track::after {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: calc(1.3rem - 6px);
+  height: calc(1.3rem - 6px);
+  border-radius: 50%;
+  background: var(--rose);
+  transition: transform 0.2s;
+}
+
+.name-switch input:checked + .track {
+  background: var(--rose);
+}
+
+.name-switch input:checked + .track::after {
+  background: var(--paper);
+  transform: translateX(1.1rem);
+}
+
+.name-switch input:focus-visible + .track {
+  outline: 2px solid var(--rose-dark);
+  outline-offset: 2px;
+}
+
 h2 {
   color: var(--rose);
   font-weight: normal;
