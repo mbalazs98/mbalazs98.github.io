@@ -2,7 +2,7 @@
 
 // Paste the Google Apps Script web app URL here (see _wedding_backend/README.md).
 // While empty, the site runs in demo mode and stores registrations only in this browser.
-const ENDPOINT = "";
+const ENDPOINT = "https://script.google.com/macros/s/AKfycbyudy_ESaTkKjL_dqsVk3X8iUeLjmLnkag-mH9gMlBGvLxEiC7ZXT34mFPkxkt3FFtX/exec";
 
 const STRINGS = {
   en: {
