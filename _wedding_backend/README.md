@@ -15,9 +15,14 @@ so this script stays private.
 4. Authorise when asked, then copy the web app URL (ends in `/exec`).
 5. Paste it into `ENDPOINT` at the top of `wedding/wedding.js`, commit and push.
 
-A "Registrations" tab is created automatically on the first submission. Each row has
-`timestamp, group, family, first, email, accommodation, lang`; `group` links people who were
-registered together in one form submission (useful for the future guest graph).
+A "Guests" tab is created automatically on the first registration. Each guest registers
+separately and gets a row:
+
+`timestamp, id, family, first, email, allergies, accommodation, lang, knows, token`
+
+- `knows` is a comma-separated list of the ids of guests they ticked under "Who do you know?".
+  Together these form the guest network.
+- `token` is a secret that only that guest's browser has, so nobody else can change their ticks.
 
 If you edit the script later, use **Deploy → Manage deployments → Edit → New version**
 so the URL stays the same.
@@ -26,6 +31,7 @@ so the URL stays the same.
 
 The Google Sheet itself stays private: only you and people you share it with can open it.
 The script runs as you, and its public URL only returns what `doGet` sends: names and
-group ids. Emails and accommodation requests are visible only in the sheet.
+ids, plus the "who knows whom" links (for the network graph). Emails, allergies,
+accommodation requests and tokens are visible only in the sheet.
 The pages are not linked from the main site and carry `noindex`, but anyone with the
 URL can open them.
